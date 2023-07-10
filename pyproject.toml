@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools", "versioneer[toml]"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "checkersai"
+description = "Checkers program with computer players"
+requires-python = ">= 3.11"
+dependencies = [
+    "pygame"
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+develop = [
+    "black",
+    "versioneer"
+]
+
+[tool.black]
+target-version = ["py311"]
+preview = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.versioneer]
+VCS = "git"
+style = "pep440"
+versionfile_source = "src/checkersai/_version.py"
+versionfile_build = "checkersai/_version.py"
+tag_prefix = ""

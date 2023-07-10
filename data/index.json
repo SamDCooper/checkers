@@ -1,0 +1,10 @@
+{
+  "background": "background.png",
+  "white_square": ["white_sq.png"],
+  "black_square": ["black_sq.png"],
+  "white_piece": "white_piece.png",
+  "black_piece": "black_piece.png",
+  "capturable_underlay": "capturable_underlay.png",
+  "selected_underlay": "selected_underlay.png",
+  "king_overlay": "king_overlay.png"
+}
